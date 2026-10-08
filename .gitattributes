@@ -1,0 +1,7 @@
+# Keep line endings stable: PowerShell is fine with LF and the containers are Linux.
+* text=auto eol=lf
+
+# The nginx and ssrf_proxy entrypoint scripts run inside Linux containers, where a
+# CRLF shebang line breaks the start.
+*.sh text eol=lf
+*.template text eol=lf

@@ -1,0 +1,9 @@
+# Local .env - copy it from .env.example and never commit real values.
+.env
+
+# Generated at runtime by the nginx entrypoint from conf.d/default.conf.template.
+nginx/conf.d/default.conf
+
+# TLS material - certificates and keys are per-deployment, never committed.
+nginx/ssl/*
+!nginx/ssl/.gitkeep
